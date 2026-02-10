@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+
+    <h1>Hola Index</h1>
+
+    <p th:text="'Hola, ' + ${name} + ' ! '">
+        Texto por defecto
+    </p>
+
+    <p th:text="'Hola, ' + ${person.firstName} + ' ! '">Texto por defecto</p>
+    <p th:text="'Hola, ' + ${person.lastName} + ' ! '">Texto por defecto</p>
+    <p th:text="'Hola, ' + ${person.profession} + ' ! '">Texto por defecto</p>
+
+    <p th:if="${name.length < 3}" class="text-red-500">Error el nombre debe tener al menos 3 caracteres</p>
+
+
+</body>
+</html>
