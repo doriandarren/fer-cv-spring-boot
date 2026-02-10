@@ -6,13 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Skills</h1>
+    <h1>Nuestras Habilidades</h1>
+
+    <form action="/skills" method="get">
+        <label th:for="filter">Filtrar</label>
+        <input type="text" name="filter" th:value="${filter}">
+        <button type="submit">Crear Skill</button>
+    </form>
 
     <p th:if="${skills.isEmpty()}">No hay datos</p>
 
+
     <ul th:if="${!skills.isEmpty()}">
-        <li th:each="skill : ${skills}" th:text="${skill}"></li>
+        <li th:each="skill, stat : ${skills}">
+            <a href="/skills/${stat}}" th:text="${skill.name}"></a> -
+            <span th:text="${skill.level}"></span>
+        </li>
     </ul>
+
+
 
 </body>
 </html>
