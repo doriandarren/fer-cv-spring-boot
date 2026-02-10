@@ -8,7 +8,11 @@
 <body>
     <h1>Agregar nueva Skills</h1>
 
-
+    <form th:action="@{/skills/store}" th:object="${skill}" method="post">
+        <label th:for="name">Nombre</label>
+        <input type="text" th:field="*{name}">
+        <button type="submit">Guardar</button>
+    </form>
 
 </body>
 </html>
