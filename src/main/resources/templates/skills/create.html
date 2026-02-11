@@ -1,0 +1,40 @@
+
+<form th:action="@{/skills/store}" th:object="${skill}" method="post">
+
+  <div class="mb-5">
+    <label th:for="name">Nombre</label>
+    <input 
+      type="text" 
+      th:field="*{name}" 
+      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+    />
+  </div>
+
+  <div class="mb-5">
+    <label th:for="level">Nivel</label>
+    <input 
+      type="text" 
+      th:field="*{level}" 
+      class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+    />
+  </div>
+
+
+
+  <div class="flex items-center justify-center gap-2">
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      type="submit"
+    >
+      Guardar
+    </button>
+
+    <a
+      class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      href="/skills"
+    >
+      Cancelar
+    </a>
+
+  </div>
+</form>

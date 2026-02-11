@@ -26,3 +26,12 @@
  * destroy -> eliminar
  */
 ```
+
+
+## Comando para ejecutar servidor hot-reload
+
+```sh
+
+./mvnw spring-boot:run
+
+```
