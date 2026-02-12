@@ -5,6 +5,10 @@
 - Maven
 - Jar
 
+
+
 ```sh
+
+./mvnw spring-boot:run                                      ## para ejecutar servidor hot-reload
 
 ```

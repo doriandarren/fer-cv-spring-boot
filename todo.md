@@ -35,7 +35,6 @@
 
 ./mvnw spring-boot:run                                      ## para ejecutar servidor hot-reload
 
-
 ./mvnw clean package                                        ## Compila el proyecto
 
 java -jar target/tu-cv-spring-boot-0.0.1-SNAPSHOT.jar       ## Ejecutar el .jar
