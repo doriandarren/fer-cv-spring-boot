@@ -7,10 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Skills {
+public class Skill {
     private Long id;
     private String name;
-    private String levelPercentage;
+    private Integer levelPercentage;
     private String iconClass;
-    private String personalInfoId;
+    private Long personalInfoId;
 }
