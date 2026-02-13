@@ -56,3 +56,6 @@ CREATE TABLE experiences (
         REFERENCES personal_info (id)
         ON DELETE CASCADE
 );
+
+
+

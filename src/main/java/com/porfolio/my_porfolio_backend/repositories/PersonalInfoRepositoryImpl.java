@@ -88,8 +88,10 @@ public class PersonalInfoRepositoryImpl implements IPersonalInfoRepository {
                 return ps;
             }, keyHolder);
 
-            
-
+            Number generateId = keyHolder.getKey();
+            if(generateId != null){
+                personalInfo.setId(generateId.longValue());
+            }
 
         }else{
 
